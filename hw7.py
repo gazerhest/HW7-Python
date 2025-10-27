@@ -1,4 +1,3 @@
-import random
 import time
 
 '''
@@ -56,7 +55,7 @@ def process_payment(amount): # симулюємо процес оплати
         else:
             print('Невідома опція. Введіть 1, або 2, або exit якщо потрібно повернутись назад')
 
-def print_ticket(spot, duration):
+def print_ticket(spot, duration): #друк талона
     print('Друк талона...')
     time.sleep(1)
 
@@ -69,7 +68,7 @@ def print_ticket(spot, duration):
 
     return True
 
-def interface():
+def interface(): #інтерфейс
     price_per_hour = 15.0
 
     while True:
@@ -98,5 +97,6 @@ def interface():
 
         print("\nНатисніть Enter, щоб почати нову сесію...")
         input()
+
 
 interface()
